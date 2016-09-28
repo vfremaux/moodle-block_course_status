@@ -17,20 +17,20 @@
 /**
  * Version details.
  *
- * @package     course_course_status
+ * @package     block_course_status
  * @category    blocks
- * @author      Valery Fremaux (valery.fremaux@gmeil.com)
- * @copyright   2009 onwards Valery Fremaux (valery.fremaux@gmeil.com)
+ * @author      Valery Fremaux (valery.fremaux@gmail.com)
+ * @copyright   2O09 onwards Valery Fremaux (valery.fremaux@gmail.com)
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014091000;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2015050500;        // Requires this Moodle version
-$plugin->release   = "2.9.0 Build(2014091000)";
+$plugin->version   = 2014091000;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2015111100;        // Requires this Moodle version.
+$plugin->release   = '3.0.0 Build(2014091000)';
 $plugin->maturity   = MATURITY_RC;
-$plugin->component = 'block_course_status'; // Full name of the plugin (used for diagnostics)
+$plugin->component = 'block_course_status'; // Full name of the plugin (used for diagnostics).
 
 // Non moodle attributes.
-$plugin->codeincrement = '2.9.0000';
+$plugin->codeincrement = '3.0.0000';
