@@ -14,21 +14,20 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Version details.
- *
- * @package    block_course_status
- * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014091000;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2018042700;        // Requires this Moodle version.
-$plugin->release   = "3.5.0 Build(2014091000)";
-$plugin->maturity   = MATURITY_RC;
-$plugin->component = 'block_course_status'; // Full name of the plugin (used for diagnostics).
+/**
+ * @package    block_course_status
+ * @category   blocks
+ * @author      Valery Fremaux <valery.fremaux@gmail.fr>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
+ * @copyright  (C) 1999 onwards Martin Dougiamas  http://dougiamas.com
+ */
 
-// Non moodle attributes.
-$plugin->codeincrement = '3.5.0000';
+/**
+ * This function is not implemented in this plugin, but is needed to mark
+ * the vf documentation custom volume availability.
+ */
+function block_course_status_supports_feature($feature) {
+    assert(1);
+}

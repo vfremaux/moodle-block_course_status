@@ -15,20 +15,31 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details.
+ * Privacy Subsystem implementation for block_course_recycle.
  *
  * @package    block_course_status
- * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @copyright  2017 Valery Fremaux <valery.fremaux@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace block_course_status\privacy;
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014091000;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2018042700;        // Requires this Moodle version.
-$plugin->release   = "3.5.0 Build(2014091000)";
-$plugin->maturity   = MATURITY_RC;
-$plugin->component = 'block_course_status'; // Full name of the plugin (used for diagnostics).
+/**
+ * Privacy Subsystem for block_course_recycle implementing null_provider.
+ *
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class provider implements \core_privacy\local\metadata\null_provider {
 
-// Non moodle attributes.
-$plugin->codeincrement = '3.5.0000';
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}

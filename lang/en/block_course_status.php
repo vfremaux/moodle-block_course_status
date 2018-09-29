@@ -1,11 +1,32 @@
-<?PHP // $Id: block_course_status.php,v 1.2 2013-02-01 18:40:11 vf Exp $ 
-      // block_course_status.php - created with Moodle 1.7 beta + (2006101003)
+<?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * @package   block_course_status
+ * @copyright 2015 Valery Fremaux
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 $string['course_status:addinstance'] = 'Add on instance of Course Status';
 $string['course_status:iseditor'] = 'Is course editor';
 $string['course_status:isreviewer'] = 'Is course content reviewer';
 $string['course_status:updatecoursestatus'] = 'Update course status';
 $string['course_status:viewcoursestatus'] = 'View course status';
+
+// Privacy
+$string['privacy:metadata'] = 'The Course Status block does not directly store any personal data about any user.';
 
 $string['actualstate'] = 'Actual state: {$a}';
 $string['addstatus'] = 'Add status';
