@@ -25,7 +25,6 @@ defined('MOODLE_INTERNAL') || die();
  */
 
 require_once($CFG->libdir.'/formslib.php');
-require_once($CFG->dirroot.'/lib/coursecatlib.php');
 
 class Status_Form extends moodleform {
 
@@ -60,7 +59,7 @@ class Status_Form extends moodleform {
         $displaylist = array();
         $parentlist = array();
 
-        $displaylist = coursecat::make_categories_list();
+        $displaylist = \core_course_category::make_categories_list();
 
         foreach ($displaylist as $key => $val) {
             if (!has_capability('moodle/course:create', context_coursecat::instance($key))) {
